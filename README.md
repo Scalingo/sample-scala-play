@@ -1,37 +1,23 @@
-# scala/play-getting-started
+# Sample Application with Scala and Play Framework
 
-A barebones Scala app (using the Play framework), which can easily be deployed to Heroku.
+A Scala Application (using the Play framework), which can easily be deployed to Scalingo.
 
-This application support the [Getting Started with Scala/Play on Heroku](https://devcenter.heroku.com/articles/getting-started-with-scala) article - check it out.
+## Deploy via Git
 
-## Running Locally
+Create an application on https://scalingo.com, then:
 
-Make sure you have Play and sbt installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-```sh
-$ git clone https://github.com/heroku/scala-getting-started.git
-$ cd scala-getting-started
-$ sbt compile stage
-$ heroku local
+```shell
+git remote add scalingo git@ssh.osc-fr1.scalingo.com:<name_of_your_app>.git
+git push scalingo master
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+And that's it!
 
-## Deploying to Heroku
+## Deploy via One-Click
 
-```sh
-$ heroku create
-$ git push heroku main
-$ heroku open
-```
+[![Deploy to Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://my.scalingo.com/deploy)
 
-or
+## Links
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Play and Scala on Heroku, see these Dev Center articles:
-
-- [Play and Scala on Heroku](https://devcenter.heroku.com/categories/language-support#scala-and-play)
-
+For more information about using Scala on Scalingo, see the
+[Scalingo Documentation](https://doc.scalingo.com/languages/scala/start).
